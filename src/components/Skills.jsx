@@ -1,41 +1,75 @@
-import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const skillGroups = [
   {
-    label: 'Languages',
-    color: '#6ee7b7',
-    items: ['C++', 'Python', 'JavaScript', 'C'],
+    label: "Languages",
+    color: "#6ee7b7",
+    items: ["C++", "Python", "JavaScript", "TypeScript", "SQL", "C"],
+  },
+
+  {
+    label: "Frontend",
+    color: "#f472b6",
+    items: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3",
+      "Responsive Design",
+    ],
   },
   {
-    label: 'Core CS',
-    color: '#818cf8',
-    items: ['Data Structures & Algorithms', 'OOP', 'DBMS', 'Operating Systems', 'SDLC'],
+    label: "Backend",
+    color: "#fbbf24",
+    items: [
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "REST APIs",
+      "JWT",
+      "Google OAuth 2.0",
+    ],
   },
   {
-    label: 'Frontend',
-    color: '#f472b6',
-    items: ['React.js', 'HTML / CSS', 'Tailwind CSS'],
+    label: "Databases",
+    color: "#34d399",
+    items: ["PostgreSQL", "pgvector", "MongoDB", "MySQL", "Database Design"],
   },
   {
-    label: 'Backend',
-    color: '#fbbf24',
-    items: ['Node.js', 'Express.js', 'REST APIs', 'JWT', 'OAuth 2.0'],
+    label: "Cloud & DevOps",
+    color: "#60a5fa",
+    items: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Redis",
+      "Supabase",
+      "Vercel",
+      "Render",
+      "Postman",
+      "Linux",
+    ],
   },
   {
-    label: 'Databases',
-    color: '#34d399',
-    items: ['MongoDB', 'MySQL'],
+    label: "Computer Science",
+    color: "#818cf8",
+    items: [
+      "Data Structures",
+      "Algorithms",
+      "OOP",
+      "DBMS",
+      "Operating Systems",
+      "System Design",
+      "Software Architecture",
+      "SDLC",
+    ],
   },
-  {
-    label: 'Tools & DevOps',
-    color: '#60a5fa',
-    items: ['Git / GitHub', 'Postman', 'VS Code', 'Linux', 'Vercel', 'Render'],
-  },
-]
+];
 
 export default function Skills() {
-  const titleRef = useScrollReveal()
-  const gridRef = useScrollReveal()
+  const titleRef = useScrollReveal();
+  const gridRef = useScrollReveal();
 
   return (
     <section id="skills" className="py-24 relative">
@@ -46,14 +80,19 @@ export default function Skills() {
 
       <div className="max-w-6xl mx-auto px-6 relative">
         <div ref={titleRef} className="reveal mb-12">
-          <p className="font-mono text-[#6ee7b7] text-xs uppercase tracking-widest mb-2">02 / Skills</p>
+          <p className="font-mono text-[#6ee7b7] text-xs uppercase tracking-widest mb-2">
+            02 / Skills
+          </p>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-[#e2e8f0]">
             Tech Stack
           </h2>
         </div>
 
-        <div ref={gridRef} className="reveal stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {skillGroups.map(group => (
+        <div
+          ref={gridRef}
+          className="reveal stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
+          {skillGroups.map((group) => (
             <div
               key={group.label}
               className="bg-[#16161e] border border-[#1e1e2a] rounded-xl p-5 card-hover group"
@@ -61,7 +100,10 @@ export default function Skills() {
               <div className="flex items-center gap-2 mb-4">
                 <div
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: group.color, boxShadow: `0 0 8px ${group.color}60` }}
+                  style={{
+                    backgroundColor: group.color,
+                    boxShadow: `0 0 8px ${group.color}60`,
+                  }}
                 />
                 <h3
                   className="font-display font-semibold text-sm uppercase tracking-wider"
@@ -71,11 +113,11 @@ export default function Skills() {
                 </h3>
               </div>
               <div className="flex flex-wrap gap-1.5">
-                {group.items.map(skill => (
+                {group.items.map((skill) => (
                   <span
                     key={skill}
                     className="px-2.5 py-1 rounded-md bg-[#0a0a0f] border border-[#1e1e2a] text-[#9ca3af] text-xs font-mono group-hover:border-opacity-50 transition-all duration-200"
-                    style={{ '--hover-color': group.color }}
+                    style={{ "--hover-color": group.color }}
                   >
                     {skill}
                   </span>
@@ -86,5 +128,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

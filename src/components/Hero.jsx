@@ -1,44 +1,44 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from "react";
 
 const socialLinks = [
   {
-    label: 'GitHub',
-    href: 'https://github.com/Nilaksh7',
+    label: "GitHub",
+    href: "https://github.com/Nilaksh7",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
       </svg>
     ),
   },
   {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/nilaksh-berwal-g07071952',
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/nilaksh-berwal-g07071952",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
       </svg>
     ),
   },
   {
-    label: 'LeetCode',
-    href: 'https://leetcode.com/u/Nilaksh7/',
+    label: "LeetCode",
+    href: "https://leetcode.com/u/Nilaksh7/",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
       </svg>
     ),
   },
-]
+];
 
 export default function Hero() {
-  const canvasRef = useRef(null)
+  const canvasRef = useRef(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    const ctx = canvas.getContext('2d')
-    let w = canvas.width = window.innerWidth
-    let h = canvas.height = window.innerHeight
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let w = (canvas.width = window.innerWidth);
+    let h = (canvas.height = window.innerHeight);
 
     const particles = Array.from({ length: 60 }, () => ({
       x: Math.random() * w,
@@ -47,37 +47,37 @@ export default function Hero() {
       dx: (Math.random() - 0.5) * 0.3,
       dy: (Math.random() - 0.5) * 0.3,
       opacity: Math.random() * 0.4 + 0.1,
-    }))
+    }));
 
-    let raf
+    let raf;
     const draw = () => {
-      ctx.clearRect(0, 0, w, h)
-      particles.forEach(p => {
-        ctx.beginPath()
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(110, 231, 183, ${p.opacity})`
-        ctx.fill()
-        p.x += p.dx
-        p.y += p.dy
-        if (p.x < 0 || p.x > w) p.dx *= -1
-        if (p.y < 0 || p.y > h) p.dy *= -1
-      })
-      raf = requestAnimationFrame(draw)
-    }
+      ctx.clearRect(0, 0, w, h);
+      particles.forEach((p) => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(110, 231, 183, ${p.opacity})`;
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > w) p.dx *= -1;
+        if (p.y < 0 || p.y > h) p.dy *= -1;
+      });
+      raf = requestAnimationFrame(draw);
+    };
 
-    draw()
+    draw();
 
     const onResize = () => {
-      w = canvas.width = window.innerWidth
-      h = canvas.height = window.innerHeight
-    }
-    window.addEventListener('resize', onResize)
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+    };
+    window.addEventListener("resize", onResize);
 
     return () => {
-      cancelAnimationFrame(raf)
-      window.removeEventListener('resize', onResize)
-    }
-  }, [])
+      cancelAnimationFrame(raf);
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
 
   return (
     <section
@@ -105,7 +105,7 @@ export default function Hero() {
             linear-gradient(rgba(110,231,183,0.03) 1px, transparent 1px),
             linear-gradient(90deg, rgba(110,231,183,0.03) 1px, transparent 1px)
           `,
-          backgroundSize: '60px 60px',
+          backgroundSize: "60px 60px",
         }}
       />
 
@@ -115,7 +115,7 @@ export default function Hero() {
           {/* Badge */}
           <div
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#6ee7b7]/25 bg-[#6ee7b7]/5 text-[#6ee7b7] text-xs font-mono mb-6"
-            style={{ animation: 'fadeUp 0.5s ease 0.1s both' }}
+            style={{ animation: "fadeUp 0.5s ease 0.1s both" }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#6ee7b7] animate-pulse" />
             Open to Internship Opportunities
@@ -124,7 +124,7 @@ export default function Hero() {
           {/* Name */}
           <h1
             className="font-display font-bold leading-[1.05] mb-4"
-            style={{ animation: 'fadeUp 0.5s ease 0.2s both' }}
+            style={{ animation: "fadeUp 0.5s ease 0.2s both" }}
           >
             <span className="block text-5xl sm:text-6xl lg:text-7xl text-[#e2e8f0]">
               Nilaksh
@@ -137,7 +137,7 @@ export default function Hero() {
           {/* Tagline */}
           <p
             className="font-mono text-[#6ee7b7] text-sm sm:text-base mb-4 tracking-widest uppercase"
-            style={{ animation: 'fadeUp 0.5s ease 0.3s both' }}
+            style={{ animation: "fadeUp 0.5s ease 0.3s both" }}
           >
             Full Stack Developer · Problem Solver
           </p>
@@ -145,18 +145,18 @@ export default function Hero() {
           {/* Description */}
           <p
             className="text-[#9ca3af] text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
-            style={{ animation: 'fadeUp 0.5s ease 0.4s both' }}
+            style={{ animation: "fadeUp 0.5s ease 0.4s both" }}
           >
-            CS undergraduate at{' '}
-            <span className="text-[#e2e8f0] font-medium">NIT Delhi</span> building
-            scalable full-stack systems. Passionate about clean architecture and
-            solving real-world problems with elegant code.
+            CS undergraduate at{" "}
+            <span className="text-[#e2e8f0] font-medium">NIT Delhi</span>{" "}
+            building scalable full-stack systems. Passionate about clean
+            architecture and solving real-world problems with elegant code.
           </p>
 
           {/* CTA Buttons */}
           <div
             className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-10"
-            style={{ animation: 'fadeUp 0.5s ease 0.5s both' }}
+            style={{ animation: "fadeUp 0.5s ease 0.5s both" }}
           >
             <a
               href="#projects"
@@ -175,9 +175,9 @@ export default function Hero() {
           {/* Social Links */}
           <div
             className="flex items-center justify-center lg:justify-start gap-4"
-            style={{ animation: 'fadeUp 0.5s ease 0.6s both' }}
+            style={{ animation: "fadeUp 0.5s ease 0.6s both" }}
           >
-            {socialLinks.map(s => (
+            {socialLinks.map((s) => (
               <a
                 key={s.label}
                 href={s.href}
@@ -202,7 +202,7 @@ export default function Hero() {
         {/* Profile Image */}
         <div
           className="flex-shrink-0"
-          style={{ animation: 'fadeIn 0.8s ease 0.3s both' }}
+          style={{ animation: "fadeIn 0.8s ease 0.3s both" }}
         >
           <div className="relative">
             {/* Decorative ring */}
@@ -224,14 +224,22 @@ export default function Hero() {
 
             {/* Stats badge */}
             <div className="absolute -bottom-3 -right-3 bg-[#16161e] border border-[#1e1e2a] rounded-xl px-3 py-2 text-center glow-green">
-              <div className="font-display font-bold text-[#6ee7b7] text-lg">200+</div>
-              <div className="text-[#6b7280] text-[10px] font-mono uppercase tracking-wider">DSA Solved</div>
+              <div className="font-display font-bold text-[#6ee7b7] text-lg">
+                500+
+              </div>
+              <div className="text-[#6b7280] text-[10px] font-mono uppercase tracking-wider">
+                DSA Solved
+              </div>
             </div>
 
             {/* CGPA badge */}
             <div className="absolute -top-2 -left-4 bg-[#16161e] border border-[#1e1e2a] rounded-xl px-3 py-2 text-center glow-purple">
-              <div className="font-display font-bold text-[#818cf8] text-lg">8.25</div>
-              <div className="text-[#6b7280] text-[10px] font-mono uppercase tracking-wider">CGPA</div>
+              <div className="font-display font-bold text-[#818cf8] text-lg">
+                8.19
+              </div>
+              <div className="text-[#6b7280] text-[10px] font-mono uppercase tracking-wider">
+                CGPA
+              </div>
             </div>
           </div>
         </div>
@@ -243,5 +251,5 @@ export default function Hero() {
         <div className="w-px h-8 bg-gradient-to-b from-[#6b7280] to-transparent" />
       </div>
     </section>
-  )
+  );
 }
