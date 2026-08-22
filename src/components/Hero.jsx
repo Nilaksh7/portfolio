@@ -241,6 +241,26 @@ export default function Hero() {
               </div>
             </div>
 
+            {/* LeetCode badge */}
+            <div className="absolute bottom-20 -right-12 bg-[#16161e] border border-[#f59e0b]/30 rounded-xl px-3 py-2 text-center shadow-lg shadow-[#f59e0b]/10">
+              <div className="font-display font-bold text-[#f59e0b] text-lg">
+                Knight
+              </div>
+              <div className="text-[#6b7280] text-[10px] font-mono uppercase tracking-wider">
+                LeetCode
+              </div>
+            </div>
+                        
+            {/* Codeforces badge */}
+            <div className="absolute -bottom-3 -left-12 bg-[#16161e] border border-[#60a5fa]/30 rounded-xl px-3 py-2 text-center shadow-lg shadow-[#60a5fa]/10">
+              <div className="font-display font-bold text-[#60a5fa] text-lg">
+                Pupil
+              </div>
+              <div className="text-[#6b7280] text-[10px] font-mono uppercase tracking-wider">
+                Codeforces
+              </div>
+            </div>
+
             {/* CGPA badge */}
             <div className="absolute -top-2 -left-4 bg-[#16161e] border border-[#1e1e2a] rounded-xl px-3 py-2 text-center glow-purple">
               <div className="font-display font-bold text-[#818cf8] text-lg">
