@@ -28,6 +28,15 @@ const socialLinks = [
       </svg>
     ),
   },
+  {
+  label: "Codeforces",
+  href: "https://codeforces.com/profile/Nilaksh7",
+  icon: (
+    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M4.5 2.5C3.12 2.5 2 3.62 2 5v14c0 1.38 1.12 2.5 2.5 2.5h2C7.88 21.5 9 20.38 9 19V5c0-1.38-1.12-2.5-2.5-2.5h-2zm7.5 4C10.62 6.5 9.5 7.62 9.5 9v10c0 1.38 1.12 2.5 2.5 2.5h2c1.38 0 2.5-1.12 2.5-2.5V9c0-1.38-1.12-2.5-2.5-2.5h-2zm7.5 4C18.12 10.5 17 11.62 17 13v6c0 1.38 1.12 2.5 2.5 2.5h2c1.38 0 2.5-1.12 2.5-2.5v-6c0-1.38-1.12-2.5-2.5-2.5h-2z" />
+    </svg>
+  ),
+},
 ];
 
 export default function Hero() {
