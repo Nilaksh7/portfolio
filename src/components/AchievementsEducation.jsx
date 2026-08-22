@@ -72,7 +72,7 @@ export default function AchievementsEducation() {
   return (
     <>
       {/* Achievements */}
-      <section id="achievements" className="py-16 relative">
+      <section id="achievements" className="py-16 relative scroll-mt-24">
         <div className="max-w-6xl mx-auto px-6">
           <div ref={titleRefA} className="reveal mb-10">
             <p className="font-mono text-[#6ee7b7] text-xs uppercase tracking-widest mb-2">
@@ -106,7 +106,7 @@ export default function AchievementsEducation() {
       </section>
 
       {/* Education */}
-      <section id="education" className="py-16 relative">
+      <section id="education" className="py-16 relative scroll-mt-24">
         <div className="max-w-6xl mx-auto px-6">
           <div ref={titleRefE} className="reveal mb-10">
             <p className="font-mono text-[#6ee7b7] text-xs uppercase tracking-widest mb-2">
