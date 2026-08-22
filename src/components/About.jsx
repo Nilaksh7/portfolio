@@ -4,6 +4,11 @@ const highlights = [
   { label: "University", value: "NIT Delhi", sub: "B.Tech CSE" },
   { label: "CGPA", value: "8.19", sub: "Current" },
   { label: "DSA Solved", value: "500+", sub: "Across Platforms" },
+  { label: "LeetCode", value: "Knight", sub: "1850+ Rating" },
+
+  { label: "Codeforces", value: "Pupil", sub: "Competitive Programmer" },
+
+  
   { label: "Featured Project", value: "RepoMind", sub: "RAG + LLM Platform" },
 ];
 
@@ -40,19 +45,26 @@ export default function About() {
             </p>
 
             <p className="text-[#9ca3af] text-base leading-relaxed">
-              I have solved{" "}
-              <span className="text-[#6ee7b7] font-semibold">
-                500+ DSA problems
-              </span>{" "}
-              across multiple coding platforms and secured{" "}
-              <span className="text-[#e2e8f0] font-medium">
-                AIR 323 among 20,000+ participants
-              </span>{" "}
-              in a national competitive programming contest. My recent work
-              focuses on Retrieval-Augmented Generation (RAG), semantic search,
-              vector databases, and designing production-ready full-stack
-              applications.
-            </p>
+  I have solved{" "}
+  <span className="text-[#6ee7b7] font-semibold">
+    500+ DSA problems
+  </span>{" "}
+  across multiple coding platforms and hold a{" "}
+  <span className="text-[#e2e8f0] font-medium">
+    Knight rating (1850+) on LeetCode
+  </span>{" "}
+  and{" "}
+  <span className="text-[#e2e8f0] font-medium">
+    Pupil rating on Codeforces
+  </span>
+  . I also secured{" "}
+  <span className="text-[#e2e8f0] font-medium">
+    2nd place in the AlgoUniversity Graph Contest
+  </span>{" "}
+  held at NIT Delhi. My recent work focuses on Retrieval-Augmented
+  Generation (RAG), semantic search, vector databases, and designing
+  production-ready full-stack applications.
+</p>
 
             <p className="text-[#9ca3af] text-base leading-relaxed">
               As a{" "}
