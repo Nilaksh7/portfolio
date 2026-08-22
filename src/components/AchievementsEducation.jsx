@@ -2,22 +2,34 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const achievements = [
   {
-    title: "AIR 323 / 20,000+",
-    desc: "EROH Competitive Programming Contest",
+    title: "AIR 323",
+    desc: "EROH National Level Competitive Programming Contest",
     icon: "🏆",
     color: "#fbbf24",
+  },
+  {
+    title: "Knight",
+    desc: "LeetCode — 1850+ Contest Rating",
+    icon: "♞",
+    color: "#f97316",
+  },
+  {
+    title: "Pupil",
+    desc: "Codeforces — Competitive Programming",
+    icon: "⚔️",
+    color: "#60a5fa",
+  },
+  {
+    title: "2nd Place",
+    desc: "AlgoUniversity Graph Contest at NIT Delhi",
+    icon: "🥈",
+    color: "#a78bfa",
   },
   {
     title: "Selected",
     desc: "Google Gemini Student Ambassador",
     icon: "✨",
     color: "#8b5cf6",
-  },
-  {
-    title: "2nd Place",
-    desc: "AlgoUniversity Graph Contest — 500+ participants",
-    icon: "🥈",
-    color: "#60a5fa",
   },
   {
     title: "500+ Problems",
@@ -38,7 +50,7 @@ const education = [
   {
     degree: "Class 12 — PCM",
     institution: "Bhavan Vidyalaya, Chandigarh",
-    period: "2022 – 2024",
+    period: "2023 – 2024",
     grade: "92.8%",
     color: "#818cf8",
   },
