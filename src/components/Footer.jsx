@@ -13,7 +13,8 @@ export default function Footer() {
           {[
             { href: 'https://github.com/Nilaksh7', label: 'GitHub' },
             { href: 'https://www.linkedin.com/in/nilaksh-berwal-g07071952', label: 'LinkedIn' },
-            { href: 'https://leetcode.com/u/Nilaksh7/', label: 'LeetCode' },
+            { href: 'https://leetcode.com/u/Nilakshbe7/', label: 'LeetCode' },
+      { href: 'https://codeforces.com/profile/Nilaksh7', label: 'CodeForces' },
           ].map(l => (
             <a
               key={l.label}
