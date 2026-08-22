@@ -72,7 +72,7 @@ export default function AchievementsEducation() {
   return (
     <>
       {/* Achievements */}
-      <section className="py-16 relative">
+      <section id="achievements" className="py-16 relative">
         <div className="max-w-6xl mx-auto px-6">
           <div ref={titleRefA} className="reveal mb-10">
             <p className="font-mono text-[#6ee7b7] text-xs uppercase tracking-widest mb-2">
