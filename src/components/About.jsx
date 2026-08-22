@@ -87,6 +87,7 @@ export default function About() {
                 "RAG",
                 "LLMs",
                 "System Design",
+      "DSA","OOPS","CP",
               ].map((tag) => (
                 <span
                   key={tag}
