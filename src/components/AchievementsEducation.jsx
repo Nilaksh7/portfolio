@@ -30,7 +30,7 @@ const achievements = [
     color: "#8b5cf6",
   },
   {
-    title: "Semi-Finalist",
+    title: "2 X Semi-Finalist",
     desc: "Industrial Hackathon — DSIIDC & HackIndia",
     icon: "🚀",
     color: "#6ee7b7",
